@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+
+
+-(IBAction)refreshButtonCLick:(id)sender;
 
 @end
 

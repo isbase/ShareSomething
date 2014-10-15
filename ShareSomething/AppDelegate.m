@@ -129,14 +129,6 @@
                           redirectUri:@"http://www.juejin8.com"];
     
     /**
-     连接印象笔记应用以使用相关功能，此应用需要引用EverNoteConnection.framework
-     http://dev.yinxiang.com上注册应用，并将相关信息填写到以下字段
-     **/
-    [ShareSDK connectEvernoteWithType:SSEverNoteTypeSandbox
-                          consumerKey:@"sharesdk-7807"
-                       consumerSecret:@"d05bf86993836004"];
-    
-    /**
      连接搜狐随身看应用以使用相关功能，此应用需要引用SohuConnection.framework
      https://open.sohu.com上注册应用，并将相关信息填写到以下字段
      **/
