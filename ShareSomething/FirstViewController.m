@@ -25,18 +25,31 @@
     
     self.tableView.frame = self.view.frame;
     _refreshControl = [[UIRefreshControl alloc] init];
+    _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新..."];
     [self.tableView addSubview:_refreshControl];
     [_refreshControl addTarget:self action:(@selector(refreshControlState)) forControlEvents:UIControlEventValueChanged];
 }
 
-
 -(void)refreshButtonCLick:(id)sender
 {
-    if (_reloading) return;
+    if (_reloading || _refreshControl.refreshing) return;
+    NSLog(@"走了   %f",self.tableView.contentOffset.y);
     
-    [_refreshControl beginRefreshing];
-   // [self refreshControlState];
+    self.tableView.contentOffset = CGPointMake(0, -64);
+    if (self.tableView.contentOffset.y == -64) {
+        [UIView animateWithDuration:0.25
+                              delay:0
+                            options:UIViewAnimationOptionBeginFromCurrentState
+                         animations:^(void){
+                             self.tableView.contentOffset = CGPointMake(0, - 150);
+                         } completion:^(BOOL finished){
+                             [_refreshControl beginRefreshing];
+                             [_refreshControl sendActionsForControlEvents:UIControlEventValueChanged];
+                         }];
+    }
 }
+
+
 
 -(void)refreshControlState
 {
@@ -67,6 +80,7 @@
     
     if(cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell.backgroundColor = [UIColor whiteColor];
     }
     
     cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];

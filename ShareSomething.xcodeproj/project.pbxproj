@@ -77,6 +77,13 @@
 		D7B75F9B19EE7D7B005028F1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B75F9A19EE7D7B005028F1 /* MobileCoreServices.framework */; };
 		D7B75F9D19EE7DA1005028F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B75F9C19EE7DA1005028F1 /* CoreGraphics.framework */; };
 		D7B75F9E19EE7DB8005028F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B75F4F19ECF3E8005028F1 /* CoreLocation.framework */; };
+		D7B75FA119EFA15F005028F1 /* CameraPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B75FA019EFA15F005028F1 /* CameraPickerController.m */; };
+		D7B75FAC19EFA213005028F1 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B75FA419EFA213005028F1 /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
+		D7B75FAD19EFA213005028F1 /* ASImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B75FA619EFA213005028F1 /* ASImageScrollView.m */; };
+		D7B75FAE19EFA213005028F1 /* ASMediaFocusController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B75FA819EFA213005028F1 /* ASMediaFocusController.m */; };
+		D7B75FAF19EFA213005028F1 /* ASMediaFocusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B75FA919EFA213005028F1 /* ASMediaFocusController.xib */; };
+		D7B75FB019EFA213005028F1 /* ASMediaFocusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B75FAB19EFA213005028F1 /* ASMediaFocusManager.m */; };
+		D7B75FB519EFA27B005028F1 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B75FB419EFA27B005028F1 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +199,18 @@
 		D7B75F9019EE7A61005028F1 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		D7B75F9A19EE7D7B005028F1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D7B75F9C19EE7DA1005028F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D7B75F9F19EFA15F005028F1 /* CameraPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraPickerController.h; sourceTree = "<group>"; };
+		D7B75FA019EFA15F005028F1 /* CameraPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraPickerController.m; sourceTree = "<group>"; };
+		D7B75FA319EFA213005028F1 /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
+		D7B75FA419EFA213005028F1 /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
+		D7B75FA519EFA213005028F1 /* ASImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASImageScrollView.h; sourceTree = "<group>"; };
+		D7B75FA619EFA213005028F1 /* ASImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASImageScrollView.m; sourceTree = "<group>"; };
+		D7B75FA719EFA213005028F1 /* ASMediaFocusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMediaFocusController.h; sourceTree = "<group>"; };
+		D7B75FA819EFA213005028F1 /* ASMediaFocusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMediaFocusController.m; sourceTree = "<group>"; };
+		D7B75FA919EFA213005028F1 /* ASMediaFocusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASMediaFocusController.xib; sourceTree = "<group>"; };
+		D7B75FAA19EFA213005028F1 /* ASMediaFocusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMediaFocusManager.h; sourceTree = "<group>"; };
+		D7B75FAB19EFA213005028F1 /* ASMediaFocusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMediaFocusManager.m; sourceTree = "<group>"; };
+		D7B75FB419EFA27B005028F1 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B75FB519EFA27B005028F1 /* CoreImage.framework in Frameworks */,
 				D7B75F9E19EE7DB8005028F1 /* CoreLocation.framework in Frameworks */,
 				D7B75F4819ECF27A005028F1 /* Security.framework in Frameworks */,
 				D7B75F9D19EE7DA1005028F1 /* CoreGraphics.framework in Frameworks */,
@@ -250,6 +270,7 @@
 		D7B75EB819ECF04A005028F1 = {
 			isa = PBXGroup;
 			children = (
+				D7B75FB419EFA27B005028F1 /* CoreImage.framework */,
 				D7B75EC319ECF04A005028F1 /* ShareSomething */,
 				D7B75EE019ECF04A005028F1 /* ShareSomethingTests */,
 				D7B75EC219ECF04A005028F1 /* Products */,
@@ -499,6 +520,8 @@
 			children = (
 				D7B75F7519ED3541005028F1 /* SendViewController.h */,
 				D7B75F7619ED3541005028F1 /* SendViewController.m */,
+				D7B75F9F19EFA15F005028F1 /* CameraPickerController.h */,
+				D7B75FA019EFA15F005028F1 /* CameraPickerController.m */,
 			);
 			name = EditAndSend;
 			sourceTree = "<group>";
@@ -515,6 +538,7 @@
 		D7B75F7C19EE7A61005028F1 /* Verdor */ = {
 			isa = PBXGroup;
 			children = (
+				D7B75FA219EFA213005028F1 /* ASMediaFocusManager */,
 				D7B75F7D19EE7A61005028F1 /* AFNetworking */,
 			);
 			path = Verdor;
@@ -545,6 +569,23 @@
 			);
 			path = AFNetworking;
 			sourceTree = "<group>";
+		};
+		D7B75FA219EFA213005028F1 /* ASMediaFocusManager */ = {
+			isa = PBXGroup;
+			children = (
+				D7B75FA319EFA213005028F1 /* ALAssetsLibrary+CustomPhotoAlbum.h */,
+				D7B75FA419EFA213005028F1 /* ALAssetsLibrary+CustomPhotoAlbum.m */,
+				D7B75FA519EFA213005028F1 /* ASImageScrollView.h */,
+				D7B75FA619EFA213005028F1 /* ASImageScrollView.m */,
+				D7B75FA719EFA213005028F1 /* ASMediaFocusController.h */,
+				D7B75FA819EFA213005028F1 /* ASMediaFocusController.m */,
+				D7B75FA919EFA213005028F1 /* ASMediaFocusController.xib */,
+				D7B75FAA19EFA213005028F1 /* ASMediaFocusManager.h */,
+				D7B75FAB19EFA213005028F1 /* ASMediaFocusManager.m */,
+			);
+			name = ASMediaFocusManager;
+			path = ShareSomething/ASMediaFocusManager;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -630,6 +671,7 @@
 				D7B75F2E19ECF0E9005028F1 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				D7B75F7219ED1DD5005028F1 /* InfoPlist.strings in Resources */,
 				D7B75F7019ED1DD5005028F1 /* InfoPlist.strings in Resources */,
+				D7B75FAF19EFA213005028F1 /* ASMediaFocusController.xib in Resources */,
 				D7B75ED319ECF04A005028F1 /* Main.storyboard in Resources */,
 				D7B75F3A19ECF0E9005028F1 /* ShareSDKiPhoneSimpleShareViewUI.bundle in Resources */,
 				D7B75ED819ECF04A005028F1 /* LaunchScreen.xib in Resources */,
@@ -661,9 +703,11 @@
 			files = (
 				D7B75F9619EE7A61005028F1 /* AFURLConnectionOperation.m in Sources */,
 				D7B75F7719ED3541005028F1 /* SendViewController.m in Sources */,
+				D7B75FA119EFA15F005028F1 /* CameraPickerController.m in Sources */,
 				D7B75F9519EE7A61005028F1 /* AFSecurityPolicy.m in Sources */,
 				D7B75F6119ED0F54005028F1 /* AGAuthViewController.m in Sources */,
 				D7B75F9219EE7A61005028F1 /* AFHTTPRequestOperationManager.m in Sources */,
+				D7B75FAE19EFA213005028F1 /* ASMediaFocusController.m in Sources */,
 				D7B75ED019ECF04A005028F1 /* SecondViewController.m in Sources */,
 				D7B75ECA19ECF04A005028F1 /* AppDelegate.m in Sources */,
 				D7B75F6219ED0F54005028F1 /* AGShareCell.m in Sources */,
@@ -672,12 +716,15 @@
 				D7B75F9919EE7A61005028F1 /* AFURLSessionManager.m in Sources */,
 				D7B75F9819EE7A61005028F1 /* AFURLResponseSerialization.m in Sources */,
 				D7B75EC719ECF04A005028F1 /* main.m in Sources */,
+				D7B75FAC19EFA213005028F1 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				D7B75F6519ED1298005028F1 /* UIView+Common.m in Sources */,
 				D7B75F9719EE7A61005028F1 /* AFURLRequestSerialization.m in Sources */,
 				D7B75F9419EE7A61005028F1 /* AFNetworkReachabilityManager.m in Sources */,
 				D7B75F7B19EE688D005028F1 /* HttpTool.m in Sources */,
 				D7B75F9119EE7A61005028F1 /* AFHTTPRequestOperation.m in Sources */,
 				D7B75F9319EE7A61005028F1 /* AFHTTPSessionManager.m in Sources */,
+				D7B75FAD19EFA213005028F1 /* ASImageScrollView.m in Sources */,
+				D7B75FB019EFA213005028F1 /* ASMediaFocusManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

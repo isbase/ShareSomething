@@ -20,8 +20,19 @@
 #define IMAGE_NAME @"sharesdk_img"
 #define IMAGE_EXT @"jpg"
 
+#define IOS6                        (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1)
+#define SCREEN_HEIGHT               (([UIScreen mainScreen].bounds.size.height) - (IOS6?20:0))    //屏幕高度
+#define SCREEN_WIDTH                ([UIScreen mainScreen].bounds.size.width)                      //屏幕宽度
+#define SharedDelegate              ((AppDelegate *)([UIApplication sharedApplication].delegate))
+#define SCREEN_OFFSET_Y             ([[[UIDevice currentDevice] systemVersion] floatValue] < 7 ?0:20)
+#define IOS7                        ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7 ?YES:NO)
+
 
 
 @interface Common : NSObject
+
+
+
++(UIColor *) hexStringToColor: (NSString *) stringToConvert;
 
 @end
